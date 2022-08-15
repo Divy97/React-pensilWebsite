@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,500&display=swap");
 
+section {
+  height: 700px;
+  width: 100%;
+}
 .clip {
   clip-path: polygon(0 0%, 100% 0, 100% 33%, 0 78%);
   background-color: #fa8bff;
