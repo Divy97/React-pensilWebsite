@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+.que {
+  padding: 10% 20%;
+  background: #03203c;
+  width: auto;
+  height: 773px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5em;
+}
+
+.animate {
+  transition: all 0.3s;
+  font-weight: bolder;
+}
+
+.queText {
+  color: #fff;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: 0.15em;
+  position: relative;
+  top: -60px;
+  left: -280px;
+  font-size: 50px;
+  font-family: "DynaPuff", cursive;
+  text-transform: uppercase;
+  color: #fff;
+}
+input[name="question"] {
+  display: none;
+}
+input[name="question"] + label {
+  position: relative;
+  display: block;
+  padding: 20px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  background: rgba(246, 246, 246, 1);
+  color: #03203c;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.response {
+  position: relative;
+  background: #03203c;
+  color: #03203c;
+  padding: 10px 20px;
+  -webkit-transform: translate3d(0, -40px, 0) rotate(-0.5deg);
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  border-radius: 3px;
+}
+
+input[name="question"]:checked + label {
+  background: #f6f6f6;
+  color: #03203c;
+}
+input[name="question"]:checked + label + .response {
+  opacity: 1;
+  visibility: visible;
+  padding: 10px 20px;
+  -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+  -webkit-filter: blur(0px);
+  margin-bottom: 20px;
+  color: white;
+}
+
+.fixed-height {
+  height: 30px;
+  overflow: hidden;
+  opacity: 1 !important;
+}

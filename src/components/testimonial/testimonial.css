@@ -1,0 +1,40 @@
+.carousal {
+  position: relative;
+  top: 100px;
+  color: #000;
+  font-size: 20px;
+}
+.img {
+  height: 500px;
+  width: 100%;
+}
+
+.imgPhoto {
+  height: 200px;
+  width: 200px;
+  margin-top: -300px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+}
+
+.clipPath__testimonial {
+  clip-path: polygon(0 50%, 0 0, 0 0, 20% 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #5da3fa;
+  width: 100%;
+  height: 500px;
+  z-index: 1;
+}
+
+.clipPath__testimonialOne {
+  clip-path: polygon(79% 100%, 100% 48%, 100% 48%, 100% 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #5da3fa;
+  width: 100%;
+  height: 500px;
+  /* z-index: 0; */
+}

@@ -4,7 +4,7 @@ import pen1 from "../../assets/pen1.png";
 import pen2 from "../../assets/pen2.png";
 
 import { BiLogIn } from "react-icons/bi";
-
+import { MdOutlineMarkChatUnread } from "react-icons/md";
 import "./header.css";
 // import { Link } from "react-router-dom";
 
@@ -56,6 +56,16 @@ const Header = () => {
           <img src={pen2} alt="pen1" className="img1" />
           <img src={pen1} alt="pen1" className="img2" />
         </div>
+        <MdOutlineMarkChatUnread
+          style={{
+            color: "blue",
+            position: "fixed",
+            fontSize: "50px",
+            top: "650px",
+            right: "30px",
+            zIndex: "2",
+          }}
+        />
       </section>
     </>
   );
